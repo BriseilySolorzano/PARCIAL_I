@@ -14,7 +14,18 @@ problemática a tu código
 PARA LA ELABORACION DEL PRIMER EJERCICIO VAMOS A USAR CLASES, EN DONDE VAMOS A ALMACENAR A LOS PACIENTES, LAS CONSULTAS, SI YA TIENE UNA CONSULTA O QUIERE UNA NUEVA CONSULTA, EL DOCTOR CON EL QUE PASARA LA CONSULTA Y LA FECHA EN LA QUE SE TIENE QUE HACER PRESENTE EN LA CLINICA
 -----------------------------------------------------------------------
 
-3. Una biblioteca ofrece préstamos de libros a través de una tarjeta
+2. Una biblioteca ofrece préstamos de libros a través de una tarjeta
+impresa que contiene los datos de la persona que realiza el préstamo. El
+sistema de préstamos registra la fecha en que se retira el libro y la fecha
+límite para su devolución. Realiza un programa que solvente esto de
+una manera más eficaz.
+ Implementar la sección de devolución la cual si la fecha excede la
+que devolución se dará una sanción.
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+4. Una biblioteca ofrece préstamos de libros a través de una tarjeta
 impresa que contiene los datos de la persona que realiza el préstamo. El
 sistema de préstamos registra la fecha en que se retira el libro y la fecha
 límite para su devolución. Realiza un programa que solvente esto de
@@ -23,7 +34,7 @@ una manera más eficaz.
 que devolución se dará una sanción.
 
 
-4. Una tienda local vende diversos productos, cada vez que un cliente 
+5. Una tienda local vende diversos productos, cada vez que un cliente 
 hace una compra niña mary se encarga de anotarlo en una libreta. A su 
 vez, con una calculadora le da el total a cada cliente y les da su 
 respectivo vuelto en caso de necesitarlo.
