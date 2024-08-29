@@ -1,6 +1,8 @@
 --------------------------------------------
 Parcial I - Programacion Computacional
+\br
 William Guandique SMSS076423
+br/
 Briseily  Solorzano SMMSS030723
 ---------------------------------------------
 1. Un consultorio médico atiende a una serie de pacientes, solo está una
