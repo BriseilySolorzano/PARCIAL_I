@@ -1,5 +1,14 @@
 """" 
  EJERCICIO 1 -- CONSULTORIO MEDICO
+
+Un consultorio médico atiende a una serie de pacientes, solo está una
+secretaria y en el consultorio hay varios doctores cada paciente llega y
+deja sus datos además del motivo de su consulta y posteriormente la
+secretaria les asigna la fecha de su consulta.
+ En el caso que una persona ya tenga una consulta previa en lugar
+de tomar datos se le pasará a sala de esperas. Implementa esta
+problemática a tu código.
+
 """
 
 class Paciente:
@@ -71,4 +80,3 @@ while True:
     else:
         print("Opción inválida. Por favor, intente de nuevo.\n")
 
-        
