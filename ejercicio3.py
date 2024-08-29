@@ -50,7 +50,7 @@ class tienda:
         nombre = input("Ingrese el nombre del producto: ")
         precio = float(input("Ingrese el precio del producto: "))
         cantidad = int(input("Ingrese la cantidad del producto: "))
-        nombreCli = ("Ingrese el nombre del cliente: ")
+        nombreCli = input("Ingrese el nombre del cliente: ")
         self.my_stock[nombre] = {"nombre": nombre, "precio": precio, "cantidad": cantidad, "cliente":nombreCli}
         print(f"producto {nombre} agregado al inventario.") 
     
@@ -61,3 +61,32 @@ class tienda:
             for key, value in self.my_stock.items(): 
                 print(f"Nombre: {value['nombre']}, Precio: {value['precio']}, Cantidad: {value['cantidad']}, CLiente: {value['cliente']}") 
                 print("--------------------------------------------")
+
+
+    def comprar(self): # funcion para mostrar los productos 
+        nombre = input("Ingrese el nombre del producto: ")
+        cantidad = int(input("Ingrese la cantidad a comprar: "))
+        cliComprador = input("Nombre del cliente: ")
+        if nombre in self.my_stock: # un  if para comprobar si hay ese producto para ejecutar la compra
+            if self.my_stock[nombre]["cantidad"] >= cantidad: 
+                self.my_stock[nombre]["cantidad"] -= cantidad
+                self.productos_comprados.append((nombre, cantidad)) 
+                self.total += self.my_stock[nombre]["precio"] * cantidad 
+                print(f"{cliComprador} ha comprado {cantidad} unidades de {nombre}")
+            else:
+                print(f"No hay suficiente stock de {nombre}")
+        else: 
+            print(f"No hay {nombre} en el inventario")
+
+        # Resumen de la compra
+        print("\nResumen de la compra:")
+        for producto, cantidad in self.productos_comprados: 
+            print(f"{producto}: {cantidad} x {self.my_stock[producto]['precio']} = {self.my_stock[producto]['precio'] * cantidad}") 
+        print(f"Total: {self.total}") 
+        cash = float(input("Ingrese el efectivo: ")) # Solicito el efectivo
+        if cash >= self.total: 
+            cambio = cash - self.total 
+            print(f"Cambio: {round(cambio,2)}")
+        else:
+            print("No hay suficiente efectivo.")
+            
