@@ -7,8 +7,10 @@ por lo cual enlista aquellos que están en tratamiento,
 que dosis y cada cuanto tiempo se debe medicar a un animal.
 """
 
+# Clase que representa a un animal en el zoologico
 class Animal:
     def __init__(self, nombre, especie, area, estado_salud="saludable", tratamiento=None):
+        # Inicializa los atributos del animal
         self.nombre = nombre
         self.especie = especie
         self.area = area
@@ -16,21 +18,31 @@ class Animal:
         self.tratamiento = tratamiento
 
     def __str__(self):
+        # Representación de cadena del animal
         return f"{self.nombre} ({self.especie}) - {self.area} - {self.estado_salud}"
 
+# Clase que representa al zoologico
 class Zoologico:
     def __init__(self):
+        # Inicializa la lista de animales
         self.animales = []
 
     def agregar_animal(self, animal):
+        # Agrega un animal a la lista de animales
         self.animales.append(animal)
 
     def generar_reporte(self):
+        # Genera un reporte de todos los animales en el zoologico
         print("Reporte de animales:")
-        for animal in self.animales:
-            print(animal)
+        print("-----------------------------------------")
+        if not self.animales:
+            print("No hay animales en el zoologico")
+        else:
+            for animal in self.animales:
+                print(animal)
 
     def listar_animales_tratamiento(self):
+        # Lista los animales que están en tratamiento
         animales_tratamiento = [animal for animal in self.animales if animal.estado_salud != "saludable"]
         if animales_tratamiento:
             print("Animales en tratamiento:")
@@ -40,6 +52,7 @@ class Zoologico:
             print("No hay animales en tratamiento.")
 
     def menu(self):
+        # Menú principal del zoologico
         while True:
             print("\nMenú del Zoo:")
             print("1. Agregar animal")
@@ -50,6 +63,7 @@ class Zoologico:
             opcion = input("Ingrese una opción: ")
 
             if opcion == "1":
+                # Agregar animal
                 print("-----------------------------------------")
                 nombre = input("Ingrese el nombre del animal: ")
                 especie = input("Ingrese la especie del animal: ")
@@ -66,20 +80,24 @@ class Zoologico:
                 self.agregar_animal(animal)
                 print("Animal agregado con éxito.")
             elif opcion == "2":
+                # Generar reporte
                 print("-----------------------------------------")
                 self.generar_reporte()
             elif opcion == "3":
+                # Listar animales en tratamiento
                 print("-----------------------------------------")
                 self.listar_animales_tratamiento()
             elif opcion == "4":
+                # Salir
                 print("-----------------------------------------")
                 print("Saliendo...")
                 break
             else:
+                # Opción inválida
                 print("-----------------------------------------")
                 print("Opción inválida. Intente nuevamente.")
                 continue
 
-# Crear un objeto Zoologico y llamar al menú
+# Crear un objeto zoologico y llamar al menú
 zoologico = Zoologico()
 zoologico.menu()
