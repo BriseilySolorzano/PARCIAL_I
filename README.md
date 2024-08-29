@@ -1,8 +1,6 @@
 --------------------------------------------
 Parcial I - Programacion Computacional
-\br
 William Guandique SMSS076423
-br/
 Briseily  Solorzano SMMSS030723
 ---------------------------------------------
 1. Un consultorio médico atiende a una serie de pacientes, solo está una
@@ -33,7 +31,6 @@ una manera más eficaz.
  Implementar la sección de devolución la cual si la fecha excede la
 que devolución se dará una sanción.
 
-
 5. Una tienda local vende diversos productos, cada vez que un cliente 
 hace una compra niña mary se encarga de anotarlo en una libreta. A su 
 vez, con una calculadora le da el total a cada cliente y les da su 
@@ -42,12 +39,11 @@ respectivo vuelto en caso de necesitarlo.
 le dan cierta cantidad de producto y un precio sugerido de venta, 
 propón una solución dentro de tu programa para ayudarle.
 
-Usaremos clases, 3 clases, una para la tienda, una para los clientes y una para los proveedores,
-en las cuales hare las funciones que tenga cada clase
-Clientes tendra datos de los clientes,
-Proveedores datos del proveedor
-y la tienda para gestionar las cosas que haga la tienda
-
+USAREMOS CLASES, 3 CLASES, UNA PARA LA TIENDA, UNA PARA LOS CLIENTES Y UNA PARA LOS PROVEEDORES,
+EN LAS CUALES HARE LAS FUNCIONES QUE TENGA CADA CLASE
+CLIENTES TENDRA DATOS DE LOS CLIENTES,
+PROVEEDORES DATOS DEL PROVEEDOR
+Y LA TIENDA PARA GESTIONAR LAS COSAS QUE HAGA LA TIENDA
 
 5. Un biólogo veterinario es el encargado de cuidar a los animales de un 
 zoológico el posee su registro donde va el dato de cada animal por sus 
@@ -58,6 +54,6 @@ zoológico.
 por lo cual enlista aquellos que están en tratamiento, que dosis y 
 cada cuanto tiempo se debe medicar a un animal.
 
+USARE CLASES, 2 CLASES ES LA IDEA, UNA PARA ANIMALES, OTRA PARA EL VETERINARIO,
+DONDE GESTIONE TODOS LOS PROCESOS CON FUNCIONES, LOS ANIMALES QUE ESTAN EN LA VETERINARIA, EL TRATAMIENTO QUE SE LE DARA A CADA UNO DE LOS ANIMALES Y LAS DOSIS QUE LE CORRESPONDE A CADA ANIMAL
 
-Usare clases, 2 clases es la idea, una para animales, otra para el veterinario,
-donde gestione todos los procesos con funciones
